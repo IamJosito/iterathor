@@ -1,5 +1,5 @@
 package indexathor;
-// Generated 2 feb. 2021 19:41:54 by Hibernate Tools 4.3.1
+// Generated 5 feb. 2021 17:32:04 by Hibernate Tools 4.3.1
 
 
 

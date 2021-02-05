@@ -1,5 +1,5 @@
 package indexathor;
-// Generated 2 feb. 2021 19:41:54 by Hibernate Tools 4.3.1
+// Generated 5 feb. 2021 17:32:04 by Hibernate Tools 4.3.1
 
 
 
@@ -11,21 +11,24 @@ public class Songs  implements java.io.Serializable {
 
      private SongsId id;
      private String album;
-     private Double duracion;
+     private Integer duracion;
      private String ano;
+     private String ruta;
 
     public Songs() {
     }
 
 	
-    public Songs(SongsId id) {
+    public Songs(SongsId id, String ruta) {
         this.id = id;
+        this.ruta = ruta;
     }
-    public Songs(SongsId id, String album, Double duracion, String ano) {
+    public Songs(SongsId id, String album, Integer duracion, String ano, String ruta) {
        this.id = id;
        this.album = album;
        this.duracion = duracion;
        this.ano = ano;
+       this.ruta = ruta;
     }
    
     public SongsId getId() {
@@ -42,11 +45,11 @@ public class Songs  implements java.io.Serializable {
     public void setAlbum(String album) {
         this.album = album;
     }
-    public Double getDuracion() {
+    public Integer getDuracion() {
         return this.duracion;
     }
     
-    public void setDuracion(Double duracion) {
+    public void setDuracion(Integer duracion) {
         this.duracion = duracion;
     }
     public String getAno() {
@@ -55,6 +58,13 @@ public class Songs  implements java.io.Serializable {
     
     public void setAno(String ano) {
         this.ano = ano;
+    }
+    public String getRuta() {
+        return this.ruta;
+    }
+    
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
     }
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
-<!-- Generated 2 feb. 2021 19:41:55 by Hibernate Tools 4.3.1 -->
+<!-- Generated 5 feb. 2021 17:32:04 by Hibernate Tools 4.3.1 -->
 <hibernate-mapping>
     <class name="indexathor.Songs" table="songs" catalog="indexathor" optimistic-lock="version">
         <composite-id name="id" class="indexathor.SongsId">
@@ -9,17 +9,20 @@
                 <column name="nom_cancion" length="30" />
             </key-property>
             <key-property name="artista" type="string">
-                <column name="artista" length="30" default="Anonymous"/>
+                <column name="artista" length="30" />
             </key-property>
         </composite-id>
         <property name="album" type="string">
             <column name="album" length="30" />
         </property>
-        <property name="duracion" type="java.lang.Double">
-            <column name="duracion" precision="22" scale="0" />
+        <property name="duracion" type="java.lang.Integer">
+            <column name="duracion" />
         </property>
         <property name="ano" type="string">
             <column name="ano" length="4" />
+        </property>
+        <property name="ruta" type="string">
+            <column name="ruta" length="200" not-null="true" />
         </property>
     </class>
 </hibernate-mapping>

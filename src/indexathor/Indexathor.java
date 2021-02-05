@@ -15,8 +15,9 @@ public class Indexathor {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        InsertSong is = new InsertSong("C:\\Users\\thebe\\Downloads\\BZR_YSYA.mp3");
+        InsertSong is = new InsertSong("C:\\Users\\thebe\\OneDrive\\Escritorio\\canciones");
         is.insert();
+        System.exit(0);
     }
     
 }
